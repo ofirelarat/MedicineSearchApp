@@ -1,0 +1,15 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "Web app for search around the medicine cabinet api.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ofirelarat",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "bootstrap": "^3.3.7"
+  }
+}

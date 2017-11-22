@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+    <head>
+        <title>MedicineCabinetWebApp</title>
+
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-route/angular-route.js"></script>
+
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers.js"></script>
+        <script src="scripts/directives.js"></script>
+        <script src="scripts/services.js"></script>
+
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    </head>
+    <body>
+
+        <div ng-controller="medicinesController">
+            <div ng-view="">
+
+            </div>
+        </div>
+
+    </body>
+</html>
