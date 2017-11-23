@@ -8,13 +8,6 @@
             <th>NeedPrescription</th>
         </thead>
         <tbody>
-            <tr ng-repeat="medicine in medicines">
-                    <td>{{medicine.PackageBarcode}}</td>
-                    <td>{{medicine.MedicineName}}</td>
-                    <td>{{medicine.Menufactor}}</td>
-                    <td>{{medicine.DosageForm}}</td>
-                    <td>{{medicine.InHealthBasket}}</td>
-                    <td>{{medicine.PrescriptionMedicine}}</td>
-            </tr>
+            <tr medicine-row-view medicine="medicine" ng-repeat="medicine in medicines | filter: searchModel"></tr>
         </tbody>
 </table>

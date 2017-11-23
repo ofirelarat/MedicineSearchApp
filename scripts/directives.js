@@ -9,6 +9,10 @@ app.directive("header",function(){
 app.directive("searchView", function(){
     return {
         restrict: "E",
+        scope: {
+            searchText: "@",
+            orderByType: "@"
+        },
         templateUrl: "/templates/search-view.html"
     };
 });
@@ -16,13 +20,17 @@ app.directive("searchView", function(){
 app.directive("medicinesTable", function(){
     return {
         restrict: "E",
+        scope: false,
         templateUrl: "/templates/table-view.html"
     };
 });
 
 app.directive("medicineRowView", function(){
     return {
-        restrict: "E",
+        restrict: "A",
+        scope: {
+            medicine:"="
+        },
         templateUrl: "/templates/medicine-row-view.html"
     };
 });
