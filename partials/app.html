@@ -1,8 +1,14 @@
 <div>
     <header></header>
-    <div class="container content-block">
-        <search-view searchText="" orderByType=""></search-view>
+    <div class="container">
+        <input type="text" class="form-control" placeholder="search text" ng-model="searchInput"/>
+        <br /><br />
+        <select class="form-control" ng-model="orderInput">
+            <option>Barcode</option>
+            <option>Name</option>
+            <option>InHealthBasket</option>
+            <option>PrescriptionMedicine</option>
+        </select><br /><br />
     </div>
-    <br/>
-    <medicines-table></medicines-table>
+    <medicines-table medicins="medicines"></medicines-table>
 </div>

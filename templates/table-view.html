@@ -8,6 +8,8 @@
             <th>NeedPrescription</th>
         </thead>
         <tbody>
-            <tr medicine-row-view medicine="medicine" ng-repeat="medicine in medicines | filter: searchModel"></tr>
+            <tr medicine-row-view medicine="medicine"
+            ng-repeat="medicine in medicines | filter: searchInput | orderBy: orderInput">
+        </tr>
         </tbody>
 </table>

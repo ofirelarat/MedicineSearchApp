@@ -1,9 +1,11 @@
 <div>
-    <input type="text" class="form-control" placeholder="search text" ng-model="searchModel"/><br /><br />
-    <select class="form-control">
+    <input type="text" class="form-control" placeholder="search text" ng-model="search-control.searchInput"/>
+    <br /><br />
+    <select class="form-control" ng-model="search-control.orderInput">
         <option>barcode</option>
         <option>name</option>
         <option>inHealthBasket</option>
         <option>needPrescription</option>
     </select><br /><br />
 </div>
+
