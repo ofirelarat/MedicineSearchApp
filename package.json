@@ -3,31 +3,26 @@
   "version": "1.0.0",
   "description": "Web app for search around the medicine cabinet api.",
   "scripts": {
-    "clean-dist": "rimraf ./dist && mkdir dist",
-    "prebuild": "npm-run-all clean-dist test lint",
-    "build": "babel-node buildScripts/build.js",
-    "postbuild": "babel-node buildScripts/distServer.js"
+    "start": "npm-run-all --parallel lint:watch",
+    "security-check": "nsp check",
+    "lint": "esw webpack.config.* src buildScripts --color",
+    "lint:watch": "npm run lint -- --watch"
   },
   "author": "ofirelarat",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.6",
     "angular-route": "^1.6.6",
-    "webpack": "1.13.2",
+    "bootstrap": "^3.3.7",
+    "eslint": "3.8.1",
+    "eslint-plugin-import": "2.0.1",
+    "eslint-watch": "2.1.14",
+    "nsp": "2.6.2",
+    "npm-run-all": "3.1.1",
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
     "babel-preset-latest": "6.16.0",
-    "babel-register": "6.16.3",
-    "webpack-dev-middleware": "1.8.4",
-    "webpack-hot-middleware": "2.13.0",
-    "webpack-md5-hash": "0.0.5",
-    "npm-run-all": "3.1.1",
-    "chalk": "1.1.3",
-    "css-loader": "0.25.0",
-    "eslint": "3.8.1",
-    "eslint-plugin-import": "2.0.1",
-    "eslint-watch": "2.1.14",
-    "bootstrap": "^3.3.7"
+    "babel-register": "6.16.3"
   }
 }
