@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm-run-all --parallel lint:watch",
     "security-check": "nsp check",
-    "lint": "esw webpack.config.* src buildScripts --color",
+    "lint": "esw src --color",
     "lint:watch": "npm run lint -- --watch"
   },
   "author": "ofirelarat",
