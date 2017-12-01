@@ -10,7 +10,8 @@ app.directive("searchView", function(){
     return {
         restrict: "A",
         scope: {
-            searchControl:"="
+            searchInput:"=",
+            orderInput:"="
         },
         templateUrl: "/src/templates/search-view.html"
     };

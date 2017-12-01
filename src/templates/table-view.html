@@ -10,7 +10,9 @@
         </thead>
         <tbody>
             <tr medicine-row-view medicine="medicine"
-            ng-repeat="medicine in medicines | filter: searchInput | orderBy: orderInput">
+            ng-repeat="medicine in medicines |
+             filter: search-input |
+              orderBy: orderInput">
         </tr>
         </tbody>
 </table>
