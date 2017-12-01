@@ -2,7 +2,7 @@
 app.directive("header",function(){
     return {
         restrict: "E",
-        templateUrl: "/templates/header-view.html"
+        templateUrl: "/src/templates/header-view.html"
     };
 });
 
@@ -12,14 +12,14 @@ app.directive("searchView", function(){
         scope: {
             searchControl:"="
         },
-        templateUrl: "/templates/search-view.html"
+        templateUrl: "/src/templates/search-view.html"
     };
 });
 
 app.directive("medicinesTable", function(){
     return {
         restrict: "E",
-        templateUrl: "/templates/table-view.html"
+        templateUrl: "/src/templates/table-view.html"
     };
 });
 
@@ -29,6 +29,6 @@ app.directive("medicineRowView", function(){
         scope: {
             medicine:"="
         },
-        templateUrl: "/templates/medicine-row-view.html"
+        templateUrl: "/src/templates/medicine-row-view.html"
     };
 });
