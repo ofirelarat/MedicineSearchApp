@@ -1,3 +1,4 @@
+var app = require("./app.js");
 
 app.directive("header",function(){
     return {

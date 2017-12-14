@@ -6,3 +6,5 @@ app.config(function($routeProvider){
             templateUrl: "src/partials/app.html"
         });
 });
+
+module.exports = app;
