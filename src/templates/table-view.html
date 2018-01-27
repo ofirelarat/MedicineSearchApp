@@ -1,20 +1,16 @@
 <div class="scrollable">
-    <table class="table">
-            <thead>
-                <th>Barcode</th>
-                <th>Name</th>
-                <th>Name in hebrew</th>
-                <th>Manufactor</th>
-                <th>Form</th>
-                <th>InHealthBasket</th>
-                <th>NeedPrescription</th>
-            </thead>
-            <tbody>
-                <tr medicine-row-view medicine="medicine"
-                ng-repeat="medicine in medicines |
-                filter: search-input |
-                orderBy: orderInput">
-            </tr>
-            </tbody>
-    </table>
+    <ul>
+        <li class="card"  medicine="medicine"
+            ng-repeat="medicine in medicines |
+            filter: search-input |
+            orderBy: orderInput">
+            <h3>{{medicine.MedicineName}}</h3>
+            <p>{{medicine.PackageBarcode}}</p>
+            <p>{{medicine.MedicineNameHebrew}}</p>
+            <p>{{medicine.Menufactor}}</p>
+            <p>{{medicine.DosageForm}}</p>
+            <p>In health basket: {{medicine.InHealthBasket}}</p>
+            <p>Is need prescription: {{medicine.PrescriptionMedicine}}</p>
+        </li>
+    </ul>
 </div>

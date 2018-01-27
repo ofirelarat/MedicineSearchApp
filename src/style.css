@@ -6,4 +6,29 @@
 .scrollable{
     overflow: auto;
     height: 500px;
+    width: 100%;
+    padding-left: 10%;
+}
+
+ul{
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card{
+    width: 45%;
+    height: 19em;
+    margin: 5px;
+    display: block;
+
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.3);
+    transition: 0.3s;
+
+    list-style: none;
+}
+
+.card:hover {
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.6);
 }
