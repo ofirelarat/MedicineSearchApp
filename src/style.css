@@ -1,13 +1,12 @@
-
-.content-block{
-    text-align: center;
+.container{
+    width: 80%;
+    margin: 0 auto;
 }
 
 .scrollable{
     overflow: auto;
     height: 500px;
     width: 100%;
-    padding-left: 10%;
 }
 
 ul{
