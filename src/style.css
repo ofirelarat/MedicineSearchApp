@@ -2,3 +2,8 @@
 .content-block{
     text-align: center;
 }
+
+.scrollable{
+    overflow: auto;
+    height: 500px;
+}
