@@ -7,4 +7,4 @@ app.config(function($routeProvider){
         });
 });
 
-module.exports = app;
+//module.exports = app;

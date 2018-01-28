@@ -1,4 +1,4 @@
-var app = require("./app.js");
+//var app = require("./app.js");
 
 app.directive("header",function(){
     return {
@@ -33,4 +33,15 @@ app.directive("medicineRowView", function(){
         },
         templateUrl: "/src/templates/medicine-row-view.html"
     };
+});
+
+app.directive('whenScrolled', function() {
+    return function(scope, elm, attr) {
+        var container = elm[0];
+        elm.bind('scroll', function() {
+            if (container.scrollTop + container.offsetHeight >= container.scrollHeight) {
+                scope.$apply(attr.whenScrolled);
+            }
+        });
+    }
 });
