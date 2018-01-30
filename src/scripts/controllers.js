@@ -1,4 +1,4 @@
-//var app = require("./app.js");
+var app = require("./app.js");
 
 const NUM_OF_MEDICINE_IN_PAGE = 10;
 
