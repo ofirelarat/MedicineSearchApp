@@ -10,7 +10,7 @@ app.controller("medicinesController",["$scope", "medicinesFactory", function($sc
     function getMedicines(limit=NUM_OF_MEDICINE_IN_PAGE,offset=0) {
         medicinesFactory.getMedicines(limit, offset)
             .then(function (response) {
-                $scope.medicines = response.data;
+                $scope.medicines = $scope.medicines.concat(response.data);
             }, function (error) {
                 console.log('Unable to load customer data: ' + error.message);
             });

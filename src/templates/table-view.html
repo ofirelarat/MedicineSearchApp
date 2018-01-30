@@ -3,7 +3,7 @@
         <li class="card"  medicine="medicine"
             ng-repeat="medicine in medicines |
             filter: search-input |
-            orderBy: orderInput">
+            orderBy: orderInput" medicine-row-view>
             <h3>{{medicine.MedicineName}}</h3>
             <p>{{medicine.PackageBarcode}}</p>
             <p>{{medicine.MedicineNameHebrew}}</p>
