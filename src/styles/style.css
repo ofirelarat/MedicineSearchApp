@@ -10,11 +10,11 @@ body{
 
 .scrollable{
     overflow: auto;
-    height: 500px;
-    width: 100%;
 }
 
 ul{
+    height: 50%;
+
     display: inline-flex;
     flex-wrap: wrap;
     text-align: center;
