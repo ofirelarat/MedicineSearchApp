@@ -4,13 +4,6 @@
             ng-repeat="medicine in medicines |
             filter: search-input |
             orderBy: orderInput" medicine-row-view>
-            <h3>{{medicine.MedicineName}}</h3>
-            <p>{{medicine.PackageBarcode}}</p>
-            <p>{{medicine.MedicineNameHebrew}}</p>
-            <p>{{medicine.Menufactor}}</p>
-            <p>{{medicine.DosageForm}}</p>
-            <p>In health basket: {{medicine.InHealthBasket}}</p>
-            <p>Is need prescription: {{medicine.PrescriptionMedicine}}</p>
         </li>
     </ul>
 </div>
