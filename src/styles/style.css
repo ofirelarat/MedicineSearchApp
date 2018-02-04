@@ -53,3 +53,24 @@ ul{
     font-size: 17px;
     padding-top: 1em;
 }
+
+.search-block{
+
+}
+
+.search-block input {
+    margin: 40px auto;
+    width: 70%;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px #1abc9c;
+    transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #1abc9c 4%);
+    background-position: -200px 0;
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    color: darken(#1abc9c, 20%);
+
+    outline: none;
+  }
