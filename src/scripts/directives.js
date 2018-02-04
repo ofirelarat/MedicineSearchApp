@@ -11,8 +11,7 @@ app.directive("searchView", function(){
     return {
         restrict: "A",
         scope: {
-            searchInput:"=",
-            orderInput:"="
+            searchInput:"="
         },
         templateUrl: "/src/templates/search-view.html"
     };
@@ -39,7 +38,7 @@ app.directive('whenScrolled', function() {
     return function(scope, elm, attr) {
         var container = elm[0];
         elm.bind('scroll', function() {
-            if (container.scrollTop + container.offsetHeight >= container.scrollHeight) {
+            if (container.scrollTop + container.offsetHeight >= container.scrollHeight - 1) {
                 scope.$apply(attr.whenScrolled);
             }
         });

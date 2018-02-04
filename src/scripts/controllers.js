@@ -1,6 +1,6 @@
 var app = require("./app.js");
 
-const NUM_OF_MEDICINE_IN_PAGE = 10;
+const NUM_OF_MEDICINE_IN_PAGE = 5;
 
 app.controller("medicinesController",["$scope", "medicinesFactory", function($scope, medicinesFactory){
     $scope.medicines = [];
