@@ -1,11 +1,8 @@
 body{
     width: 100%;
     margin: 0;
-}
 
-.container{
-    width: 80%;
-    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 .scrollable{
@@ -52,10 +49,6 @@ ul{
 .jumbotron p{
     font-size: 17px;
     padding-top: 1em;
-}
-
-.search-block{
-
 }
 
 .search-block input {
