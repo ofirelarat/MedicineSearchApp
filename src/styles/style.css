@@ -67,3 +67,9 @@ ul{
 
     outline: none;
   }
+
+  @media screen and (max-width: 1000px) {
+    .card{
+        width: 90%;
+    }
+}
