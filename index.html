@@ -1,25 +1,28 @@
 <!DOCTYPE>
 <html ng-app="myApp">
-    <head>
-        <title>MedicineCabinetWebApp</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="node_modules/angular/angular.min.js"></script>
-        <script src="node_modules/angular-route/angular-route.js"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<head>
+    <title>MedicineCabinetWebApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-        <link rel="stylesheet" href="src/styles/style.css"/>
-    </head>
-    <body>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-        <div ng-controller="medicinesController">
-            <div ng-view="">
+    <link rel="stylesheet" href="src/styles/style.css" />
+</head>
 
-            </div>
+<body>
+
+    <div ng-controller="medicinesController">
+        <div ng-view="">
+
         </div>
+    </div>
 
-        <script src="dist/bundle.js"></script>
-    </body>
+    <script src="dist/bundle.js"></script>
+</body>
+
 </html>

@@ -1,15 +1,15 @@
-body{
+body {
     width: 100%;
     margin: 0;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
-.scrollable{
+.scrollable {
     overflow: auto;
 }
 
-ul{
+ul {
     height: 50%;
 
     display: inline-flex;
@@ -17,24 +17,24 @@ ul{
     text-align: center;
 }
 
-.card{
+.card {
     width: 45%;
     height: 19em;
     margin: 5px;
     display: block;
 
     border-radius: 5px;
-    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.3);
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 
     list-style: none;
 }
 
 .card:hover {
-    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.6);
+    box-shadow: 4px 8px 16px 4px rgba(0, 0, 0, 0.6);
 }
 
-.jumbotron{
+.jumbotron {
     width: 100%;
     height: 200px;
     background: #3498db;
@@ -42,44 +42,48 @@ ul{
     color: white;
     text-align: center;
 }
-.jumbotron h1{
+.jumbotron h1 {
     font-size: 40px;
     padding-top: 1em;
 }
-.jumbotron p{
+.jumbotron p {
     font-size: 17px;
     padding-top: 1em;
 }
 
-.search-block{
+.search-block {
     margin: 40px auto;
     width: 80%;
 }
 
-.search-block input{
+.search-block input {
     border: none;
     padding: 10px 0;
-    width:  90%;
+    width: 90%;
 
     border-bottom: solid 1px #1abc9c;
-    transition: all 0.3s cubic-bezier(.64,.09,.08,1);
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #1abc9c 4%);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 96%,
+        #1abc9c 4%
+    );
     background-position: -200px 0;
     background-size: 200px 100%;
     background-repeat: no-repeat;
     color: darken(#1abc9c, 20%);
 
     outline: none;
-  }
+}
 
-.search-block button{
+.search-block button {
     background: transparent;
     cursor: pointer;
     border: none;
 }
 
-  @media screen and (max-width: 1000px) {
-    .card{
+@media screen and (max-width: 1000px) {
+    .card {
         width: 90%;
     }
 }
